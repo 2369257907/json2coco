@@ -12,7 +12,7 @@ for annotation in label_data['annotations']:
     image_info = next(image for image in label_data['images'] if image['id'] == image_id)
 
     # 读取图像文件
-    image_file = r'C:\Users\Administrator\PycharmProjects\json2coco\json_dataset\\' + image_info['file_name']
+    image_file = r'json_dataset\\' + image_info['file_name']
     image = plt.imread(image_file)
 
     # 显示图像
